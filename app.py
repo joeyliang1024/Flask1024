@@ -4,8 +4,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    while True:
-        return (str(datetime.datetime.now()))
+    return (str(datetime.datetime.now()))
 
 def about():
     return 'About this website'
